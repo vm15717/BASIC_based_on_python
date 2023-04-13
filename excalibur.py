@@ -52,7 +52,7 @@ class Lexer:
         if self.pos < len(self.text):
             self.current_char = self.text[self.pos]
         else:
-            None
+            self.current_char = None
 
     def make_tokens(self):
         tokens_list = []
